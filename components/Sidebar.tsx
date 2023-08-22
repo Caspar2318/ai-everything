@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const Sidebar = () => {
   return (
@@ -9,6 +12,7 @@ const Sidebar = () => {
         <div className="relative w-8 h-8 mr-4">
           <Image fill src="/logo.png" alt="logo" />
         </div>
+        <h1 className="text-2xl font-bold">AIEverything</h1>
       </div>
     </div>
   );
